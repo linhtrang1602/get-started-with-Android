@@ -11,7 +11,7 @@ import android.widget.EditText;
 
 import java.text.DecimalFormat;
 
-public class Currency1 extends Activity {
+public class MainActivity extends Activity {
     //USA money format (12 digits, 2 decimals)
     DecimalFormat usaDf = new DecimalFormat("###,###,###,###.##");
 
@@ -31,7 +31,8 @@ public class Currency1 extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_linear);
+//        setContentView(R.layout.activity_main_linear);
+        setContentView(R.layout.activity_main);
 
         // bind local controls to GUI widgets
         txtUSDollars = (EditText)findViewById(R.id.txtUSDollars);
